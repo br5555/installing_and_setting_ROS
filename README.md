@@ -1,6 +1,9 @@
 # installing_and_setting_ROS
 Scripts for installing and setting workspace fro ROS kinetic
 
+catkin_make 
+catkin_make install
+
 http://www.github.com/
 
 ~~this~~
