@@ -64,5 +64,39 @@ echo -e "\e[1m \e[34m >>> Installing rqt \e[21m \e[39m"
 source ~/ros_ws/devel/setup.bash
 
 
+sudo apt-get update
+sudo apt-get upgrade
 
+cd ~/ros_ws
+
+rosdep install --from-path src --ignore-src -r
+
+sudo apt-get install ros-kinetic-hector-*
+
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-octomap-ros ros-kinetic-dynamic-edt-3d libssh2-1-dev unzip libyaml-cpp0.5 libblas-dev liblapack-dev libboost-all-dev
+
+
+
+sudo apt-get install ros-kinetic-hector-gazebo-plugins
+sudo apt-get install ros-kinetic-ros-control
+
+# # added missing libraries for working with gazebo and control
+sudo apt-get install ros-kinetic-robot-state-publisher
+sudo apt-get install ros-kinetic-joint-state-controller  
+sudo apt-get install ros-kinetic-effort-controllers 
+sudo apt-get install ros-kinetic-joint-state-publisher
+
+## MPC control
+sudo apt-get install ros-kinetic-tf-conversions 
+
+sudo apt-get update
+sudo apt-get install liblapack3
+sudo apt-get install liblapack-dev
+sudo apt-get install libopenblas-base
+sudo apt-get install libopenblas-dev
+sudo apt-get install liblapacke-dev
+
+sudo apt-get install liblapack-dev
+
+sudo apt-get install ros-kinetic-mav-*
 
